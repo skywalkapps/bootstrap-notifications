@@ -1,0 +1,31 @@
+# Dependencies
+markdown:         kramdown
+
+kramdown:
+  auto_ids: true
+  input: GFM
+  syntax_highlighter: rouge
+
+# Permalinks
+permalink:        pretty
+
+# Server
+source:          ./src/docs
+destination:     ./docs
+keep_files:		 ['assets', 'libs', 'javascripts', 'stylesheets']
+host:             localhost
+port:             8888
+baseurl:		  ""
+encoding:         UTF-8
+
+# Custom vars
+name:  			  Notifications
+current_version:  0.9.0
+repo:             https://github.com/skywalkapps/bootstrap-notifications
+
+vendor:			  ./vendor
+download:
+  source:         https://github.com/skywalkapps/bootstrap-notifications/archive/master.zip
+  dist:           https://github.com/skywalkapps/bootstrap-notifications/releases/download/v0.9.0/bootstrap-notifications-0.9.0-dist.zip
+
+blog:             http://skywalkapps.github/articles

@@ -1,0 +1,151 @@
+//
+// DOCS: Type
+// Typography
+
+/* github style pygments theme for jekyll */
+/* from https://github.com/aahan/pygments-github-style */
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'Gibson-Light';
+  src: url('../assets/fonts/gibson/26F6B3_0_0.eot');
+  src: url('../assets/fonts/26F6B3_0_0.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/gibson/26F6B3_0_0.woff') format('woff'), url('../assets/fonts//26F6B3_0_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gibson-Bold';
+  src: url('../assets/fonts/gibson/26F6B3_4_0.eot');
+  src: url('../assets/fonts/26F6B3_4_0.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/gibson/26F6B3_4_0.woff') format('woff'), url('../assets/fonts//26F6B3_4_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gibson-Regular';
+  src: url('../assets/fonts/gibson/26F6B3_5_0.eot');
+  src: url('../assets/fonts/gibson/26F6B3_5_0.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/gibson/26F6B3_5_0.woff') format('woff'), url('../assets/fonts//26F6B3_5_0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gibson-SemiBold';
+  src: url('../assets/fonts/gibson/26F6B3_6_0.eot');
+  src: url('../assets/fonts/gibson/26F6B3_6_0.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/gibson/26F6B3_6_0.woff') format('woff'), url('../assets/fonts//26F6B3_6_0.ttf') format('truetype');
+}
+
+.f-custom {
+  font-family: "Gibson-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.f-custom-light {
+  font-family: "Gibson-Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.f-custom-medium {
+  font-family: "Gibson-SemiBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.f-custom-bold {
+  font-family: "Gibson-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.lead {
+  .f-custom;
+}
+
+p > strong,
+td > strong {
+  .f-custom-medium;
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+h2,
+.h2 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h4,
+.h4 {
+  font-size: @font-size-base;
+  line-height: 1.5;
+}
+
+// Navigation
+.l-sidebar-body > .navbar {
+  .f-custom;
+  
+  .navbar-brand {
+    .f-custom-medium;
+  
+    small {
+      .f-custom;
+    }
+  }
+}
+
+// Header
+.sw-header h1,
+.sw-header p {
+  .f-custom;
+}
+
+// Body
+.l-body .content > h2 {
+    font-size: 36px;
+    .f-custom;
+}
+
+.l-body .content > h1,
+.l-body .content > h3 {
+  .f-custom-medium;
+}
+
+.l-body .content > p,
+.l-body .content > ul {
+  .f-custom;
+  font-size: 18px;
+}
+
+.l-body .content > .table-responsive table {
+  .f-custom;
+  font-size: 16px;
+  
+  th {
+    font-weight: 300;
+  }
+}
+
+.l-body .content > ul strong {
+  .f-custom-medium;
+}
+
+.sw-nav-tree  {
+  font-size: 16px;
+  .f-custom;
+}
+
+pre {
+  border: 1px solid darken(@gray-lighter, 5%);
+  background: lighten(@gray-lighter, 5%);
+}
+pre code {
+  font-size: 14px;
+}

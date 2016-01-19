@@ -1,0 +1,45 @@
+// Master file
+// -------------------
+@libPath: '../../vendor';
+
+// BOOTSTRAP
+// ===================
+
+// BOOTSTRAP: CORE
+// -------------------
+
+// Core variables and mixins
+@import "@{libPath}/bootstrap/less/bootstrap.less";
+
+// Custom styles
+// ===================
+
+// CORE
+// -------------------
+
+@import 'util/variables';
+@import 'util/mixins';
+
+@import 'core/docs';
+@import 'core/docs-type';
+@import 'core/docs-syntax';
+// @import 'core/docs-layout';
+
+// LIBRARIES
+// -------------------
+@import '@{libPath}/bootstrap-dropmenu/src/stylesheets/index';
+
+// MODULE UTILS
+// -------------------
+@import 'modules/notifications-variables';
+
+// MODULE DEFINITION
+// -------------------
+@import 'modules/notifications';
+@import 'modules/notifications-dropdown';
+@import 'modules/notifications-icon';
+
+// MODULE DEPENDENCIES
+// -------------------
+@import 'modules/dp-notifications-media';
+@import 'modules/dp-buttons-notifications-icon';

@@ -1,0 +1,90 @@
+//
+// Module: Notification icon
+// Enables notification indicator on icons
+// -----------------------------
+
+// List of notifications 
+.notifications {
+  // for <ul>
+  list-style: none; 
+  padding: 0;    
+}
+
+.notification {
+  display: block;
+  padding: @notifications-padding;
+  border-bottom: @notifications-border;
+  color: @text-color;
+  text-decoration: none;
+
+  &:last-child {
+    border-bottom: 0;  
+  }
+
+  // State: Hover
+  &:hover,
+  &.active:hover {
+    background-color: @notifications-hover-bg;
+  }
+
+  // State: Active as in "Unread"
+  &.active {
+    background-color: @notifications-hover-active;
+  }
+
+  // ul {
+  //   padding: 4px 0 4px 20px;
+  //   margin-bottom: 0;
+
+  //   li {
+  //     font-size: @font-size-small;
+  //   }
+  // }
+
+  // .show-more {
+  //   display: block;
+  //   font-weight: bold;
+  //   margin-top: 3px;
+  // }
+
+  // ul strong {
+  //   font-weight: 400;
+  // }
+
+  // .key {
+  //   font-weight: bold;
+  // }
+}
+
+// Notification Title
+// You can use simple <p> or more emphasized <strong>
+.notification-title {
+  font-size: @font-size-base + 1;
+  margin-bottom: 0;
+}
+
+// Notifications content / description
+.notification-desc {
+  margin-bottom: 0;
+}
+
+// Notifications meta (Time / Date)
+.notification-meta {
+  color: @gray-light;
+}
+
+a.notification:hover {
+  text-decoration: none;
+}
+
+
+
+// Dependencies ------------
+
+// .notification .notification {
+//   padding: @padding-large-vertical @padding-large-horizontal;
+
+//   &:last-child {
+//     border-bottom: 0;
+//   }
+// }

@@ -1,0 +1,31 @@
+//
+// DEPENDENCY: Messages Notification icon inside buttons
+// Shows notification indicator on icons
+
+// @author: Martin Staněk (https://github.com/icoach)
+// @requires: .btn
+// -----------------------------
+
+@d: 1.25 * @notifications-icon-font-size;
+
+.btn-lg .notification-icon:after {
+  margin-left: -0.6 * @d;
+  margin-top:  -0.6 * @d;
+  min-width: @d * 1.2;
+  height: @d * 1.2;
+  line-height: @d * 1.2;
+  font-size: @d;
+}
+
+.btn-xs .notification-icon:after {
+  content: '';
+  margin-left: -0.30 * @d;
+  margin-top:  -0.15 * @d;
+  min-width: @d / 2.2;
+  height: @d / 2.2;
+  line-height: @d / 2.2;
+  padding: 0;
+}
+.btn-xs .notification-icon {
+  margin-right: 0.25 * @d;
+}

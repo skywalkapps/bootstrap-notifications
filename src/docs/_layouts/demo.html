@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include head.html %}
+    <!-- Place anything custom after this. -->
+  </head>
+
+
+  <body class="sw-docs">
+    <a class="sr-only" href="#content">Skip navigation</a>
+
+    <!-- Page search and navigation -->
+    <div class="l-sidebar">
+      <div class="l-sidebar-body">
+        {% include nav.html %}
+      </div>
+    </div><!-- /l-sidebar -->
+
+    <!-- Page content -->
+    <div id="content" class="l-body" role="main">
+
+      <div class="sw-header">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1 class="page-header align-center">{{ page.title }}</h1>
+              <p class="lead align-center fade">{{ page.description }}</p>
+            </div>
+          </div>
+
+            {{ content }}
+
+        </div><!-- /container -->
+
+      </div><!-- /sw-header -->
+
+
+        {% include footer.html %}
+    </div>
+
+    <!-- Footer and JS -->
+    {% include footer-meta.html %}
+
+  </body>
+</html>

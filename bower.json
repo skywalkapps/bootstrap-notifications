@@ -1,0 +1,29 @@
+{
+  "name": "bootstrap-notifications",
+  "description": "Extension for Bootstrap adds versatile notifications",
+  "version": "0.9.0",
+  "keywords": [
+    "dropdown",
+    "menu",
+    "bootstrap",
+    "front-end"
+  ],
+  "main": [
+    "./dist/stylesheets/bootstrap-dropmenu.css"
+  ],
+  "ignore": [
+    "log",
+    "docs",
+    "grunt",
+    ".editorconfig",
+    ".gitignore"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.0",
+    "bootstrap": "~3.3.0",
+    "bootstrap-dropmenu": "~0.9.0"
+  },
+  "devDependencies": {
+    "holderjs": "~2.9.1"
+  }
+}

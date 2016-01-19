@@ -1,0 +1,29 @@
+//
+// BOOTSTRAP EXTENSION: Dropmenu
+// This module extends dropdown module with rich structure, menu positioning and more
+
+// @author: Martin Staněk (https://github.com/icoach)
+// @require: dropdown
+// @bootstrap: 3.2
+// -------------------------------
+
+@libPath: '../../vendor';
+
+// Core variables and mixins
+@import "@{libPath}/bootstrap/less/variables.less";
+@import "@{libPath}/bootstrap/less/mixins.less";
+
+// MODULE UTILS
+// -------------------
+@import 'modules/notifications-variables';
+
+// MODULE DEFINITION
+// -------------------
+@import 'modules/notifications';
+@import 'modules/notifications-dropdown';
+@import 'modules/notifications-icon';
+
+// MODULE DEPENDENCIES
+// -------------------
+@import 'modules/dp-notifications-media';
+@import 'modules/dp-buttons-notifications-icon';

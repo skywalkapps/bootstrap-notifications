@@ -1,0 +1,33 @@
+//
+// EXTENSION: Notifications Dropdown
+// This module extends implementation of Skywalk Dropmenu to show notifications
+
+// @author: Martin Staněk (https://github.com/icoach)
+// @requires: dropmenu
+// -----------------------------
+
+.dropdown-notifications {
+
+  // Sets width for the notification panel
+  > .dropdown-container,
+  > .dropdown-menu {
+    width: @notifications-dropdown-width;
+    max-width: @notifications-dropdown-width;
+  }
+  .dropdown-menu {
+    padding: 0;
+  }
+
+  .dropdown-toolbar,
+  .dropdown-footer {
+    padding: @notifications-padding;
+  }
+
+  .dropdown-toolbar {
+    background: @notifications-toolbar-bg;
+  }
+
+  .dropdown-footer {
+    background: @notifications-footer-bg;
+  }
+}

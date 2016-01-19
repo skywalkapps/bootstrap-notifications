@@ -1,0 +1,110 @@
+/*!
+ * bootstrap-dropmenu v0.9.0 (https://skywalkapps.github.io/bootstrap-dropmenu)
+ * Copyright 2016 Martin Staněk
+ * Licensed under MIT
+ */
+.message {
+  display: block;
+  padding: 9.6px 12px;
+  border-bottom: 1px solid #eeeeee;
+  color: #333333;
+  text-decoration: none;
+}
+.message:last-child {
+  border-bottom: 0;
+}
+.message:hover {
+  background-color: #f9f9f9;
+}
+.message p {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.message ul {
+  padding: 4px 0 4px 20px;
+  margin-bottom: 0;
+}
+.message ul li {
+  font-size: 12px;
+}
+.message .show-more {
+  display: block;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.message ul strong {
+  font-weight: 400;
+}
+.message .key {
+  font-weight: bold;
+}
+.message-time {
+  color: #777777;
+}
+a.notification:hover {
+  text-decoration: none;
+}
+.messages .notification {
+  padding: 10px 16px;
+}
+.messages .notification:last-child {
+  border-bottom: 0;
+}
+.dropdown-messages .dropdown-container {
+  width: 450px;
+  max-width: 450px;
+}
+.dropdown-messages .dropdown-menu {
+  padding: 0;
+}
+.dropdown-messages .dropdown-toolbar,
+.dropdown-messages .dropdown-footer {
+  padding: 9.6px 12px;
+}
+.dropdown-messages .dropdown-toolbar {
+  background: #fff;
+}
+.dropdown-messages .dropdown-footer {
+  background: #eeeeee;
+}
+.has-notification {
+  margin-right: 6.8775px;
+}
+.has-notification:after {
+  position: absolute;
+  content: attr(data-count);
+  margin-left: -6.8775px;
+  margin-top: -6.8775px;
+  padding: 0 4px;
+  min-width: 13.755px;
+  height: 13.755px;
+  line-height: 13.755px;
+  background: red;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 11.004px;
+  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.btn-lg .has-notification:after {
+  margin-left: -8.253px;
+  margin-top: -8.253px;
+  min-width: 16.506px;
+  height: 16.506px;
+  line-height: 16.506px;
+  font-size: 13.755px;
+}
+.btn-xs .has-notification:after {
+  content: '';
+  margin-left: -4.1265px;
+  margin-top: -2.06325px;
+  min-width: 6.25227273px;
+  height: 6.25227273px;
+  line-height: 6.25227273px;
+  padding: 0;
+}
+.btn-xs .has-notification {
+  margin-right: 3.43875px;
+}
