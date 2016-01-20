@@ -31,4 +31,4 @@ bootstrap-notifications/
 
 ## Copyright and license
 
-Code and documentation copyright 2015 Martin Staněk. Code released under [the MIT license](https://github.com/skywalkapps/bootstrap-dropmenu/blob/master/LICENSE).
+Code and documentation copyright 2015 Martin Staněk. Code released under [the MIT license](https://github.com/skywalkapps/bootstrap-notifications/blob/master/LICENSE).

@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-notifications",
-  "description": "Extension for Bootstrap adds versatile notifications",
+  "description": "Notifications component for Bootstrap framework",
   "version": "0.9.0",
   "author": "Martin Staněk",
   "repository": {
