@@ -1,15 +1,16 @@
 {
   "name": "bootstrap-notifications",
-  "description": "Extension for Bootstrap adds versatile notifications",
+  "description": "Notification components for Bootstrap framework",
   "version": "0.9.0",
   "keywords": [
     "notifications",
-    "messages",
     "bootstrap",
-    "front-end"
+    "messages",
+    "front-end",
+    "applications"
   ],
   "main": [
-    "./dist/stylesheets/bootstrap-dropmenu.css"
+    "./dist/stylesheets/bootstrap-notifications.css"
   ],
   "ignore": [
     "log",
