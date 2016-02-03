@@ -10,7 +10,7 @@
     "applications"
   ],
   "main": [
-    "./dist/stylesheets/bootstrap-notifications.css"
+    "./dist/stylesheets/bootstrap-notifications.min.css"
   ],
   "ignore": [
     "log",

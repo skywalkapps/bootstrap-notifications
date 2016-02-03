@@ -1,11 +1,12 @@
-// 
+//
 // GRUNT TASK: Copy
 // Copies / renames all necessary files.
 // -----------------
 
 module.exports = {
-  js: {
+  css: {
     files: [
+      { expand: true, cwd: 'dist/stylesheets', src: ['*'], dest: 'docs/stylesheets' }
     ]
   },
   assets: {
@@ -19,7 +20,7 @@ module.exports = {
       { expand: true, src: ['.gitignore'], dest: 'docs' },
       { expand: true, cwd: 'src', src: ['index.html'], dest: 'docs' },
       { expand: true, cwd: 'vendor/bootstrap/dist/js', src: ['bootstrap.min.js'], dest: 'docs/libs/bootstrap' },
-      { expand: true, cwd: 'vendor/bootstrap-quick-search/dist/javascripts', src: ['bootstrap-quick-search.min.js'], dest: 'docs/libs' }
+      { expand: true, cwd: 'vendor/skywalk-docs/dist/stylesheets', src: ['skywalk-docs.min.css'], dest: 'docs/stylesheets' }
     ]
   }
 };

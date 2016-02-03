@@ -1,4 +1,4 @@
-// 
+//
 // GRUNT TASK: Less
 // Builds LESS styles into CSS
 // -----------------
@@ -16,8 +16,7 @@ module.exports = {
       banner: banner,
     },
     files: {
-      'dist/stylesheets/<%= package.name %>.css': 'src/stylesheets/index.less',
-      'docs/stylesheets/docs.css': 'src/stylesheets/docs.less'
+      'dist/stylesheets/<%= package.name %>.css': 'src/stylesheets/index.less'
     }
   },
 
@@ -26,8 +25,7 @@ module.exports = {
       compress: true
     },
     files: {
-      'dist/stylesheets/<%= package.name %>.min.css': 'dist/stylesheets/<%= package.name %>.css',
-      'docs/stylesheets/docs.min.css': 'docs/stylesheets/docs.css'
+      'dist/stylesheets/<%= package.name %>.min.css': 'dist/stylesheets/<%= package.name %>.css'
     }
   }
 };
