@@ -42,3 +42,4 @@ node_modules
 bower_components
 vendor/*
 .jekyll-metadata
+src/dss/*

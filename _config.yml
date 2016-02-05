@@ -19,6 +19,7 @@ baseurl:		      ""
 encoding:         UTF-8
 
 # Custom vars
+analytics_code:   UA-72436545-2
 name:  			      Notifications
 current_version:  0.9.0
 repo:             https://github.com/skywalkapps/bootstrap-notifications

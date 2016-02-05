@@ -20,7 +20,8 @@ module.exports = {
       { expand: true, src: ['.gitignore'], dest: 'docs' },
       { expand: true, cwd: 'src', src: ['index.html'], dest: 'docs' },
       { expand: true, cwd: 'vendor/bootstrap/dist/js', src: ['bootstrap.min.js'], dest: 'docs/libs/bootstrap' },
-      { expand: true, cwd: 'vendor/skywalk-docs/dist/stylesheets', src: ['skywalk-docs.min.css'], dest: 'docs/stylesheets' }
+      { expand: true, cwd: 'vendor/skywalk-docs/dist/stylesheets', src: ['skywalk-docs.min.css'], dest: 'docs/stylesheets' },
+      { expand: true, cwd: 'vendor/skywalk-docs/src/assets', src: ['**'], dest: 'src/docs/assets' }
     ]
   }
 };
