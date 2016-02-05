@@ -11,22 +11,29 @@
   <meta name="keywords" content="HTML, CSS, bootstrap, front-end, frontend, plugin, module">
   <meta name="author" content="Martin Staněk">
 
-  <title>Skywalk Apps | Notifications for Bootstrap</title>
+  <title>Bootstrap Notifications by Skywalkapps</title>
 
-  <link rel="icon" href="assets/images/favicon.ico">
 
   <!-- Common stylesheet for all devices -->
   <link rel="stylesheet" href="stylesheets/skywalk-docs.min.css">
   <link rel="stylesheet" href="stylesheets/bootstrap-notifications.css">
   <!-- Place anything custom after this. -->
 
-  <!-- TODO: Favicons -->
-  <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-                  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-                                 <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
-
+  <!-- Favicons -->
+  <meta name="apple-mobile-web-app-title" content="Skywalk">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
 
     <!-- Place anything custom after this. -->
   </head>
@@ -76,7 +83,7 @@
 
           <div class="row">
             <div class="col-md-8">
-              <h1 class="page-header">Notifications for Bootstrap</h1>
+              <h1 class="page-header">Bootstrap Notifications</h1>
               <p class="sw-text lead">Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.</p>
             </div>
           </div>
@@ -323,18 +330,18 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false"> 
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span> 
+          <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" href="#">Tasks</a> 
-      </div>  
+        <a class="navbar-brand" href="#">Tasks</a>
+      </div>
 
-      <div class="collapse navbar-collapse"> 
-        <ul class="nav navbar-nav">  
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
           <li class="dropdown dropdown-notifications open">
             <a href="#notifications-panel" class="dropdown-toggle">
               <i data-count="2" class="glyphicon glyphicon-bell notification-icon"></i>
@@ -415,30 +422,30 @@
             </div><!-- /dropdown-container -->
           </li><!-- /dropdown -->
 
-          <li><a href="#">Dashboard</a></li> 
+          <li><a href="#">Dashboard</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">People</a></li>
         </ul>
-      </div> 
-    </div> 
+      </div>
+    </div>
   </nav>
 </div>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-9"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span> 
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-9"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle navigation<span class="nt">&lt;/span&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span> 
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
         <span class="nt">&lt;/button&gt;</span>
 
-        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tasks<span class="nt">&lt;/a&gt;</span> 
-      <span class="nt">&lt;/div&gt;</span>  
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tasks<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
 
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span><span class="nt">&gt;</span> 
-        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>  
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown dropdown-notifications"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#notifications-panel"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;i</span> <span class="na">data-count=</span><span class="s">"2"</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-bell notification-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -464,12 +471,12 @@
             <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /dropdown-container --&gt;</span>
           <span class="nt">&lt;/li&gt;</span><span class="c">&lt;!-- /dropdown --&gt;</span>
 
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dashboard<span class="nt">&lt;/a&gt;&lt;/li&gt;</span> 
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dashboard<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Projects<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
           <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>People<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
-      <span class="nt">&lt;/div&gt;</span> 
-    <span class="nt">&lt;/div&gt;</span> 
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/nav&gt;</span>
 </code></pre>
 </div>
@@ -587,9 +594,9 @@
     </div>
 
     <!-- Footer and JS -->
-    <!-- 
+    <!--
 	Javascripts
-	================================================== 
+	==================================================
 -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="libs/bootstrap/bootstrap.min.js"></script>
@@ -611,10 +618,11 @@ $(function(){
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-72436545-1', 'auto');
+  ga('create', 'UA-72436545-2', 'auto');
   ga('send', 'pageview');
 
 </script>
+
 
   </body>
 </html>
