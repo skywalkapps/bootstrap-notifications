@@ -19,6 +19,7 @@ baseurl:		      ""
 encoding:         UTF-8
 
 # Custom vars
+home:             http://skywalkapps.github.io
 analytics_code:   UA-72436545-2
 name:  			      Notifications
 current_version:  0.9.0
@@ -30,3 +31,6 @@ download:
   dist:           https://github.com/skywalkapps/bootstrap-notifications/releases/download/v0.9.0/bootstrap-notifications-0.9.0-dist.zip
 
 blog:             http://skywalkapps.github/articles
+
+# Content
+footer_text:      "Notifications component is part of Skywalk, set of components and extensions for Bootstrap Framework. Skywalk gives you fine quality components, which will save you a lot of development time."
