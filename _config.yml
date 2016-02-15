@@ -20,7 +20,7 @@ encoding:         UTF-8
 
 # Custom vars
 home:             http://skywalkapps.github.io
-analytics_code:   UA-72436545-2
+analytics_code:   UA-72436545-1
 name:  			      Notifications
 current_version:  0.9.0
 repo:             https://github.com/skywalkapps/bootstrap-notifications
