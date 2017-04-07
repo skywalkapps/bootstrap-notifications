@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-notifications",
   "description": "Notification panel component for Bootstrap framework",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "keywords": [
     "notifications",
     "bootstrap",

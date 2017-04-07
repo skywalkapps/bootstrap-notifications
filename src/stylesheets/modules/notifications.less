@@ -1,30 +1,35 @@
 //
-// Module: Notification icon
-// Enables notification indicator on icons
+// MODULE: Notifications
+// List of notification messages, basic structure
+//
+// @author: Martin Staněk (https://github.com/skywalkapps)
 // -----------------------------
 
-// List of notifications 
+// List of notifications
 .notifications {
   // for <ul>
-  list-style: none; 
-  padding: 0;    
+  list-style: none;
+  padding: 0;
 }
 
 .notification {
   display: block;
   padding: @notifications-padding;
-  border-bottom: @notifications-border;
+  border-width: @notifications-border-width;
+  border-style: solid;
+  border-color: @notifications-border-color;
   color: @text-color;
   text-decoration: none;
 
   &:last-child {
-    border-bottom: 0;  
+    border-bottom: 0;
   }
 
   // State: Hover
   &:hover,
   &.active:hover {
     background-color: @notifications-hover-bg;
+    border-color: @notifications-hover-border-color;
   }
 
   // State: Active as in "Unread"
@@ -32,28 +37,10 @@
     background-color: @notifications-hover-active;
   }
 
-  // ul {
-  //   padding: 4px 0 4px 20px;
-  //   margin-bottom: 0;
-
-  //   li {
-  //     font-size: @font-size-small;
-  //   }
-  // }
-
-  // .show-more {
-  //   display: block;
-  //   font-weight: bold;
-  //   margin-top: 3px;
-  // }
-
-  // ul strong {
-  //   font-weight: 400;
-  // }
-
-  // .key {
-  //   font-weight: bold;
-  // }
+  // Remove underline by default
+  a&:hover {
+    text-decoration: none;
+  }
 }
 
 // Notification Title
@@ -72,19 +59,3 @@
 .notification-meta {
   color: @gray-light;
 }
-
-a.notification:hover {
-  text-decoration: none;
-}
-
-
-
-// Dependencies ------------
-
-// .notification .notification {
-//   padding: @padding-large-vertical @padding-large-horizontal;
-
-//   &:last-child {
-//     border-bottom: 0;
-//   }
-// }

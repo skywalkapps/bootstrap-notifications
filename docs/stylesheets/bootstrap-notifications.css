@@ -1,6 +1,6 @@
 /*!
- * bootstrap-notifications v0.9.0 (https://skywalkapps.github.io/bootstrap-notifications)
- * Copyright 2016 Martin Staněk
+ * bootstrap-notifications v1.0.0 (https://skywalkapps.github.io/bootstrap-notifications)
+ * Copyright 2017 Martin Staněk
  * Licensed under MIT
  */
 .dropdown-container {
@@ -197,7 +197,9 @@ small.dropmenu-item-content {
 .notification {
   display: block;
   padding: 9.6px 12px;
-  border-bottom: 1px solid #eeeeee;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #eeeeee;
   color: #333333;
   text-decoration: none;
 }
@@ -207,9 +209,13 @@ small.dropmenu-item-content {
 .notification:hover,
 .notification.active:hover {
   background-color: #f9f9f9;
+  border-color: #eeeeee;
 }
 .notification.active {
   background-color: #f4f4f4;
+}
+a.notification:hover {
+  text-decoration: none;
 }
 .notification-title {
   font-size: 15px;
@@ -220,9 +226,6 @@ small.dropmenu-item-content {
 }
 .notification-meta {
   color: #777777;
-}
-a.notification:hover {
-  text-decoration: none;
 }
 .dropdown-notifications > .dropdown-container,
 .dropdown-notifications > .dropdown-menu {

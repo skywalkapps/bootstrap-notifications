@@ -22,13 +22,13 @@ encoding:         UTF-8
 home:             http://skywalkapps.github.io
 analytics_code:   UA-72436545-1
 name:  			      Notifications
-current_version:  0.9.0
+current_version:  1.0.0
 repo:             https://github.com/skywalkapps/bootstrap-notifications
 
 vendor:			      ./vendor
 download:
   source:         https://github.com/skywalkapps/bootstrap-notifications/archive/master.zip
-  dist:           https://github.com/skywalkapps/bootstrap-notifications/releases/download/v0.9.0/bootstrap-notifications-0.9.0-dist.zip
+  dist:           https://github.com/skywalkapps/bootstrap-notifications/releases/download/v1.0.0/bootstrap-notifications-1.0.0-dist.zip
 
 blog:             http://skywalkapps.github/articles
 
