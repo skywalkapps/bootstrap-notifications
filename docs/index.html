@@ -64,7 +64,7 @@
         <li>
           <div class="btn-group">
             <a href="https://github.com/skywalkapps/bootstrap-notifications/archive/master.zip" class="btn btn-primary navbar-btn" role="button">
-              Download Notifications v0.9.0
+              Download Notifications v1.0.0
             </a>
           </div>
         </li>
@@ -160,7 +160,7 @@
   </ul>
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"notifications"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"notifications"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-left"</span><span class="nt">&gt;</span>
@@ -301,7 +301,7 @@
 
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown dropdown-notifications sw-open"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropdown dropdown-notifications sw-open"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;i</span> <span class="na">data-count=</span><span class="s">"3"</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-bell notification-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
@@ -432,7 +432,7 @@
   </nav>
 </div>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-9"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
@@ -482,9 +482,168 @@
 </code></pre>
 </div>
 
+<h3 id="alignment-options">Alignment options</h3>
+
+<p>Notifications module extends <a href="http://skywalkapps.github.io/bootstrap-dropmenu/">Bootstrap Dropmenu</a> plugin, therefore, you can use its positioning capabilities. Just add class <code class="highlighter-rouge">.dropdown-position-bottomright</code> to the <code class="highlighter-rouge">.dropdown-container</code> to make it aligned to the right.</p>
+
+<div class="sw-example" style="padding-bottom: 390px">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">Tasks</a>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">People</a></li>
+          <li class="dropdown dropdown-notifications open">
+            <a href="#notifications-panel" class="dropdown-toggle">
+              <i data-count="2" class="glyphicon glyphicon-bell notification-icon"></i>
+            </a>
+
+            <div class="dropdown-container dropdown-position-bottomright">
+
+              <div class="dropdown-toolbar">
+                <div class="dropdown-toolbar-actions">
+                  <a href="#">Mark all as read</a>
+                </div>
+                <h3 class="dropdown-toolbar-title">Notifications (2)</h3>
+              </div><!-- /dropdown-toolbar -->
+
+              <ul class="dropdown-menu">
+                    <li class="notification">
+                      <div class="media">
+                        <div class="media-left">
+                          <div class="media-object">
+                            <img data-src="holder.js/50x50?bg=cccccc" class="img-circle" alt="Name" />
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <strong class="notification-title"><a href="#">Dave Lister</a> commented on <a href="#">DWARF-13 - Maintenance</a></strong>
+                          <p class="notification-desc">I totally don't wanna do it. Rimmer can do it.</p>
+
+                          <div class="notification-meta">
+                            <small class="timestamp">27. 11. 2015, 15:00</small>
+                          </div>
+                        </div>
+                      </div>
+                  </li>
+
+                  <li class="notification active">
+                      <div class="media">
+                        <div class="media-left">
+                          <div class="media-object">
+                            <img data-src="holder.js/50x50?bg=cccccc" class="img-circle" alt="Name" />
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <strong class="notification-title"><a href="#">Nikola Tesla</a> resolved <a href="#">T-14 - Awesome stuff</a></strong>
+
+                          <p class="notification-desc">Resolution: Fixed, Work log: 4h</p>
+
+                          <div class="notification-meta">
+                            <small class="timestamp">27. 10. 2015, 08:00</small>
+                          </div>
+
+                        </div>
+                      </div>
+                  </li>
+
+                  <li class="notification">
+                      <div class="media">
+                        <div class="media-left">
+                          <div class="media-object">
+                            <img data-src="holder.js/50x50?bg=cccccc" class="img-circle" alt="Name" />
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <strong class="notification-title"><a href="#">James Bond</a> resolved <a href="#">B-007 - Desolve Spectre organization</a></strong>
+
+                          <div class="notification-meta">
+                            <small class="timestamp">1. 9. 2015, 08:00</small>
+                          </div>
+
+                        </div>
+                      </div>
+                  </li>
+
+              </ul>
+
+              <div class="dropdown-footer text-center">
+                <a href="#">View All</a>
+              </div><!-- /dropdown-footer -->
+
+            </div><!-- /dropdown-container -->
+          </li><!-- /dropdown -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-inverse"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#bs-example-navbar-collapse-9"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle navigation<span class="nt">&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tasks<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav navbar-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"dropdown dropdown-notifications"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#notifications-panel"</span> <span class="na">class=</span><span class="s">"dropdown-toggle"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;i</span> <span class="na">data-count=</span><span class="s">"2"</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-bell notification-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-container dropdown-position-bottomright"</span><span class="nt">&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-toolbar"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-toolbar-actions"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Mark all as read<span class="nt">&lt;/a&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"dropdown-toolbar-title"</span><span class="nt">&gt;</span>Notifications (2)<span class="nt">&lt;/h3&gt;</span>
+              <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /dropdown-toolbar --&gt;</span>
+
+              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+                  ...
+              <span class="nt">&lt;/ul&gt;</span>
+
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-footer text-center"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>View All<span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /dropdown-footer --&gt;</span>
+
+            <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /dropdown-container --&gt;</span>
+          <span class="nt">&lt;/li&gt;</span><span class="c">&lt;!-- /dropdown --&gt;</span>
+
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dashboard<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Projects<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>People<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+</code></pre>
+</div>
+
 <h2 id="notifications-overview">Notifications Overview</h2>
 
-<h3 id="span-classtext-mutedmodule-spannotifications"><span class="text-muted">Module: </span>Notifications</h3>
+<h3 id="module-notifications"><span class="text-muted">Module: </span>Notifications</h3>
 
 <p>This table gives you a quick overview of elements and variables.</p>
 
@@ -531,7 +690,7 @@
   </table>
 </div>
 
-<h3 id="span-classtext-mutedmodule-spannotification-icon"><span class="text-muted">Module: </span>Notification Icon</h3>
+<h3 id="module-notification-icon"><span class="text-muted">Module: </span>Notification Icon</h3>
 
 <p>This table gives you a quick overview of elements and variables.</p>
 
