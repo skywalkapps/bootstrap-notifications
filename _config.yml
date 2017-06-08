@@ -22,7 +22,7 @@ encoding:         UTF-8
 home:             http://skywalkapps.github.io
 analytics_code:   UA-72436545-1
 name:  			      Notifications
-current_version:  1.0.1
+current_version:  1.0.2
 repo:             https://github.com/skywalkapps/bootstrap-notifications
 
 vendor:			      ./vendor
