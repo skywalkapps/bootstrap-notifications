@@ -8,7 +8,7 @@ To get started, check out <http://skywalkapps.github.io/bootstrap-notifications>
 
 Notifications component is built for Bootstrap 3. You have following options of installation:
 
-- [Download the latest release](https://github.com/skywalkapps/bootstrap-notifications/archive/v1.0.2.zip).
+- [Download the latest release](https://github.com/skywalkapps/bootstrap-notifications/archive/v1.0.3.zip).
 - Clone the repo: `git clone https://github.com/skywalkapps/bootstrap-notifications.git`.
 
 ### How to use
@@ -31,4 +31,4 @@ bootstrap-notifications/
 
 ## Copyright and license
 
-Code and documentation copyright 2015 Martin Staněk. Code released under [the MIT license](https://github.com/skywalkapps/bootstrap-notifications/blob/master/LICENSE).
+Code and documentation copyright 2015-2017 Martin Staněk. Code released under [the MIT license](https://github.com/skywalkapps/bootstrap-notifications/blob/master/LICENSE).

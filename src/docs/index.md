@@ -3,7 +3,6 @@ layout: default
 title: Bootstrap Notifications
 name: Notifications
 description: Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.
-
 ---
 
 ### Notifications List
@@ -254,7 +253,7 @@ Notifications component can be used for any kind of messages you want to show in
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown dropdown-notifications open">
-            <a href="#notifications-panel" class="dropdown-toggle">
+            <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown">
               <i data-count="2" class="glyphicon glyphicon-bell notification-icon"></i>
             </a>
 
@@ -359,7 +358,7 @@ Notifications component can be used for any kind of messages you want to show in
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown dropdown-notifications">
-            <a href="#notifications-panel" class="dropdown-toggle">
+            <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown">
               <i data-count="2" class="glyphicon glyphicon-bell notification-icon"></i>
             </a>
 
@@ -416,7 +415,7 @@ Notifications module extends [Bootstrap Dropmenu](http://skywalkapps.github.io/b
           <li><a href="#">Projects</a></li>
           <li><a href="#">People</a></li>
           <li class="dropdown dropdown-notifications open">
-            <a href="#notifications-panel" class="dropdown-toggle">
+            <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown">
               <i data-count="2" class="glyphicon glyphicon-bell notification-icon"></i>
             </a>
 
@@ -518,7 +517,7 @@ Notifications module extends [Bootstrap Dropmenu](http://skywalkapps.github.io/b
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown dropdown-notifications">
-            <a href="#notifications-panel" class="dropdown-toggle">
+            <a href="#notifications-panel" class="dropdown-toggle" data-toggle="dropdown">
               <i data-count="2" class="glyphicon glyphicon-bell notification-icon"></i>
             </a>
 
