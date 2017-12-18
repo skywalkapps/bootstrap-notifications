@@ -586,7 +586,7 @@ This table gives you a quick overview of elements and variables.
 
       <tr>
         <td><strong>Description</strong></td>
-        <td><code>.notification-title</code></td>
+        <td><code>.notification-desc</code></td>
         <td>Description is optional, you don't have to use one. It may be comment, change in related record, etc.</td>
       </tr>
 
