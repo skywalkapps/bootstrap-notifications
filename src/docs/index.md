@@ -5,6 +5,10 @@ name: Notifications
 description: Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.
 ---
 
+<a href="/bootstrap-notifications/2.0" class="sw-infobar" style="display:block;text-decoration:none;padding: 10px 15px;color: #fff;background:#083d9c;border-radius:3px;font-size:16px;font-family:'Gibson-Regular',Arial;text-align: center">
+  <strong>EXPERIMENTAL!</strong> Updated version of Bootstrap Notification compatible with Bootstrap 4.
+</a>
+
 ### Notifications List
 
 Notifications are a flexible and powerful component for displaying application messages. You have multiple options of presentation, can use either `<ul>` or `<div>` for parent element. Notification component can be used together with media object, however, it is not mandatory.
