@@ -4,18 +4,20 @@
 
 // @author: Martin Staněk (https://github.com/icoach)
 // @require: dropdown
-// @bootstrap: 3.2
+// @bootstrap: 4.0
 // -------------------------------
 
-@libPath: '../../vendor';
+$libPath: '../../vendor';
 
 // Core variables and mixins
-@import "@{libPath}/bootstrap/less/variables.less";
-@import "@{libPath}/bootstrap/less/mixins.less";
+@import "../../vendor/bootstrap-v4/scss/functions";
+@import "../../vendor/bootstrap-v4/scss/variables";
+@import "../../vendor/bootstrap-v4/scss/mixins";
 
 // LIBRARIES
 // -------------------
-@import '@{libPath}/bootstrap-dropmenu/src/stylesheets/index';
+// TODO: rewrite dropmenu to SCSS
+// @import '../../vendor/bootstrap-dropmenu/src/stylesheets/index';
 
 // MODULE UTILS
 // -------------------

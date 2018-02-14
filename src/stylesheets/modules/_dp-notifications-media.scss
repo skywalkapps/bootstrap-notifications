@@ -7,5 +7,5 @@
 // -----------------------------
 
 .notification .media-body {
-	padding-top: 0.4 * @font-size-base;
+	padding-top: $notifications-body-spacer-y;
 }

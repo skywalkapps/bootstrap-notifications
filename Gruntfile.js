@@ -24,8 +24,8 @@ module.exports = function(grunt) {
   grunt.registerTask('dev-js', ['neuter', 'jshint']);
 
   // CSS tasks
-  grunt.registerTask('dist-css', ['less']);
-  grunt.registerTask('dev-css', ['less', 'csslint']);
+  grunt.registerTask('dist-css', ['sass']);
+  //grunt.registerTask('dev-css', ['sass', 'csslint']);
 
   // Server task
   grunt.registerTask('server', ['connect:server', 'watch']);

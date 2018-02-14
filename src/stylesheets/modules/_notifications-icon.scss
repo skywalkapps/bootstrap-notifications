@@ -8,30 +8,31 @@
 // @author Martin Staněk (https://github.com/skywalkapps)
 // -----------------------------
 
-@d: 1.25 * @notifications-icon-font-size;
+$_dimensions: 1.25 * $notifications-icon-font-size;
 
 .notification-icon {
-  margin-right: 0.5 * @d;
+  margin-right: 0.5 * $_dimensions;
+  vertical-align: middle;
 }
 .notification-icon:after {
   position: absolute;
   // Use atribut data-count on target element to show notifications count
   content: attr(data-count);
 
-  margin-left: -0.5 * @d;
-  margin-top:  -0.5 * @d;
+  margin-left: -0.5 * $_dimensions;
+  margin-top:  -0.5 * $_dimensions;
 
   padding: 0 4px;
-  min-width: @d;
-  height: @d;
-  line-height: @d;
-  background: @notifications-icon-bg;
-  border-radius: @notifications-icon-radius;
+  min-width: $_dimensions;
+  height: $_dimensions;
+  line-height: $_dimensions;
+  background: $notifications-icon-bg;
+  border-radius: $notifications-icon-radius;
 
-  color: @notifications-icon-color;
+  color: $notifications-icon-color;
   text-align: center;
   vertical-align: middle;
-  font-size: @notifications-icon-font-size; // 11px
+  font-size: $notifications-icon-font-size; // 11px
   font-weight: 600;
-  font-family: @font-family-base;
+  font-family: $font-family-base;
 }

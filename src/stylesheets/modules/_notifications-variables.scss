@@ -1,0 +1,38 @@
+//
+// VARIABLES: Notifications
+// --------------------------------------------------
+
+// Notifications
+$notifications-bg:              #ffffff;
+$notifications-padding: 				0.8em;
+$notifications-border-width:		0 0 1px 0;
+$notifications-border-color:    gray('200');
+$notifiactions-text-color:      color-yiq($notifications-bg);
+$notifications-text-font-size:  0.94em;
+$notifications-title-font-size: 1.0em;
+$notifications-hover-bg: 				#f9f9f9;
+$notifications-hover-active: 		#efefef;
+$notifications-hover-border-color: gray('300');
+
+// Notifications: Icon
+$notifications-icon-font-size:  0.786 * $font-size-base; // ~ 11px
+$notifications-icon-bg:         red;
+$notifications-icon-color:      #ffffff;
+$notifications-icon-radius:     10px;
+
+// Notifications: Dropdown Panel
+$notifications-dropdown-width:  450px;
+$notifications-dropdown-border-radius: $dropdown-border-radius;
+$notifications-toolbar-bg:      #ffffff;
+$notifications-footer-bg:       gray('400');
+$notifications-dropdown-y:      $navbar-padding-y + 0.1rem;
+
+// Notificatons: Body
+$notifications-body-spacer-y:   0;
+
+// Notifications: Media
+$notifications-media-radius: 		30px;
+
+// Notifications: Meta
+$notifications-meta-color:      gray('600');
+

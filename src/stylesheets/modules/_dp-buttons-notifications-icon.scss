@@ -1,0 +1,32 @@
+//
+// DEPENDENCY: Messages Notification icon inside buttons
+// Shows notification indicator on icons
+
+// @author: Martin Staněk (https://github.com/skywalkapps)
+// @requires: .btn
+// -----------------------------
+
+$_dimensions: 1.25 * $notifications-icon-font-size;
+
+.btn-lg .notification-icon:after {
+  margin-left: -0.6 * $_dimensions;
+  margin-top:  -0.6 * $_dimensions;
+  min-width: $_dimensions * 1.2;
+  height: $_dimensions * 1.2;
+  line-height: $_dimensions * 1.2;
+  font-size: $_dimensions;
+}
+
+.btn-xs .notification-icon:after {
+  content: '';
+  margin-left: -0.30 * $_dimensions;
+  margin-top:  -0.15 * $_dimensions;
+  min-width: $_dimensions / 2.2;
+  height: $_dimensions / 2.2;
+  line-height: $_dimensions / 2.2;
+  padding: 0;
+}
+
+.btn-xs .notification-icon {
+  margin-right: 0.25 * $_dimensions;
+}
