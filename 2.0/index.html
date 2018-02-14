@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML, CSS, bootstrap, front-end, frontend, plugin, module">
+  <meta name="description" content="Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.">
+  <meta name="author" content="Martin Staněk">
+
+  <title>Bootstrap Notifications for v4 - by @skywalkapps</title>
+
+
+  <!-- Common stylesheet for all devices -->
+  <!-- <link rel="stylesheet" href="stylesheets/skywalk-docs.min.css"> -->
+  <link rel="stylesheet" href="stylesheets/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/docs.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap-dropmenu.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap-notifications.css">
+  <!-- Place anything custom after this. -->
+
+  <!-- Favicons -->
+  <meta name="apple-mobile-web-app-title" content="Skywalk">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+
+    <!-- Place anything custom after this. -->
+  </head>
+
+
+  <body class="sw-docs" data-spy="scroll" data-target=".sw-aside">
+    <a class="sr-only" href="#content">Skip navigation</a>
+
+    <!-- Page search and navigation -->
+    <div class="l-sidebar">
+      <div class="l-sidebar-body">
+        <header class="sw-navbar navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a href="http://skywalkapps.github.io" class="sw-brand navbar-brand logo" aria-label="Skywalk"><span>Skywalk</span> <small>Notifications</small></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="https://github.com/skywalkapps/bootstrap-notifications">Github</a></li>
+        <li class="nav-item">
+          <div class="btn-group">
+            <a href="https://github.com/skywalkapps/bootstrap-notifications/archive/bootstrap-v4.zip" class="btn btn-primary sw-btn-primary" role="button">
+              Download Notifications v2.0.0
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+      </div>
+    </div><!-- /l-sidebar -->
+
+    <!-- Page content -->
+    <div id="content" class="l-body" role="main">
+
+      <div class="sw-header" id="introduction">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="page-header">Bootstrap Notifications for v4</h1>
+              <p class="sw-text lead">Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.</p>
+            </div>
+
+            <!-- <div class="col-md-4">
+              <a href="/bootstrap-activity-feed" class="advertisement">
+                <h3>NEW! Bootstrap Activity Feed</h3>
+                <p>Activity Feed displays user posts in Facebook / Twitter-like style. Create the best feed out there! <em>Learn more &rarr;</em></p>
+              </a>
+            </div> -->
+          </div>
+
+        </div><!-- /container -->
+
+      </div><!-- /sw-header -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 content">
+            <h3 id="notifications-list">Notifications List</h3>
+
+<p>Notifications are a flexible and powerful component for displaying application messages. You have multiple options of presentation, can use either <code class="highlighter-rouge">&lt;ul&gt;</code> or <code class="highlighter-rouge">&lt;div&gt;</code> for parent element. Notification component can be used together with media object, however, it is not mandatory.</p>
+
+<div class="sw-example">
+  <ul class="notifications">
+    <li class="notification">
+        <div class="media">
+          <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+          <div class="media-body">
+            <strong class="notification-title"><a href="#">Dave Lister</a> commented on <a href="#">DWARF-13 - Maintenance</a></strong>
+            <p class="notification-desc">I totally don't wanna do it. Rimmer can do it.</p>
+
+            <div class="notification-meta">
+              <small class="timestamp">27. 11. 2015, 15:00</small>
+            </div>
+          </div>
+        </div>
+    </li>
+
+    <li class="notification">
+        <div class="media">
+          <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+          <div class="media-body">
+            <strong class="notification-title"><a href="#">Nikola Tesla</a> resolved <a href="#">T-14 - Awesome stuff</a></strong>
+
+            <p class="notification-desc">Resolution: Fixed, Work log: 4h</p>
+
+            <div class="notification-meta">
+              <small class="timestamp">27. 10. 2015, 08:00</small>
+            </div>
+
+          </div>
+        </div>
+    </li>
+
+    <li class="notification">
+        <div class="media">
+          <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+          <div class="media-body">
+            <strong class="notification-title"><a href="#">James Bond</a> resolved <a href="#">B-007 - Desolve Spectre organization</a></strong>
+
+            <div class="notification-meta">
+              <small class="timestamp">1. 9. 2015, 08:00</small>
+            </div>
+
+          </div>
+        </div>
+    </li>
+  </ul>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"notifications"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">"holder.js/50x50?bg=cccccc"</span> <span class="na">class=</span><span class="s">"mr-2 img-circle"</span> <span class="na">alt=</span><span class="s">"Name"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"notification-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dave Lister<span class="nt">&lt;/a&gt;</span> commented on <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>DWARF-13 - Maintenance<span class="nt">&lt;/a&gt;&lt;/strong&gt;</span>
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification-desc"</span><span class="nt">&gt;</span>I totally don't wanna do it. Rimmer can do it.<span class="nt">&lt;/p&gt;</span>
+
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification-meta"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"timestamp"</span><span class="nt">&gt;</span>27. 11. 2015, 15:00<span class="nt">&lt;/small&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">"holder.js/50x50?bg=cccccc"</span> <span class="na">class=</span><span class="s">"mr-2 img-circle"</span> <span class="na">alt=</span><span class="s">"Name"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"notification-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Nikola Tesla<span class="nt">&lt;/a&gt;</span> resolved <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>T-14 - Awesome stuff<span class="nt">&lt;/a&gt;&lt;/strong&gt;</span>
+
+          <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"notification-desc"</span><span class="nt">&gt;</span>Resolution: Fixed, Work log: 4h<span class="nt">&lt;/p&gt;</span>
+
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification-meta"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"timestamp"</span><span class="nt">&gt;</span>27. 10. 2015, 08:00<span class="nt">&lt;/small&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"notification"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">data-src=</span><span class="s">"holder.js/50x50?bg=cccccc"</span> <span class="na">class=</span><span class="s">"mr-2 img-circle"</span> <span class="na">alt=</span><span class="s">"Name"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"notification-title"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>James Bond<span class="nt">&lt;/a&gt;</span> resolved <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>B-007 - Desolve Spectre organization<span class="nt">&lt;/a&gt;&lt;/strong&gt;</span>
+
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"notification-meta"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"timestamp"</span><span class="nt">&gt;</span>1. 9. 2015, 08:00<span class="nt">&lt;/small&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="dropdown-panel">Dropdown Panel</h3>
+
+<p>With little effort, you can display notifications in toggleable dropdown component. I recommend you to use <a href="skywalkapps.github.io/bootstrap-dropmenu/">Skywalk Dropmenu</a>, an extended version of Bootstrap’s dropdown menu, which adds a few nifty features (f.e. scrollable content, toolbar, footer,…).</p>
+
+<div class="sw-example">
+  <div class="dropdown dropdown-notifications sw-open">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+    Notifications
+      <span class="caret"></span>
+    </button>
+
+    <div class="dropdown-container">
+     <div class="dropdown-toolbar">
+        <div class="dropdown-toolbar-actions">
+          <a href="#"><i class="glyphicon glyphicon-search"></i> View All</a>
+        </div>
+        <h3 class="dropdown-toolbar-title">Recent (3)</h3>
+      </div><!-- /dropdown-toolbar -->
+
+      <ul class="dropdown-menu notifications">
+        <li class="notification">
+            <div class="media">
+              <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+              <div class="media-body">
+                <strong class="notification-title"><a href="#">Dave Lister</a> commented on <a href="#">DWARF-13 - Maintenance</a></strong>
+                <p class="notification-desc">I totally don't wanna do it. Rimmer can do it.</p>
+
+                <div class="notification-meta">
+                  <small class="timestamp">27. 11. 2015, 15:00</small>
+                </div>
+              </div>
+            </div>
+        </li>
+
+        <li class="notification">
+            <div class="media">
+              <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+              <div class="media-body">
+                <strong class="notification-title"><a href="#">Nikola Tesla</a> resolved <a href="#">T-14 - Awesome stuff</a></strong>
+
+                <p class="notification-desc">Resolution: Fixed, Work log: 4h</p>
+
+                <div class="notification-meta">
+                  <small class="timestamp">27. 10. 2015, 08:00</small>
+                </div>
+
+              </div>
+            </div>
+        </li>
+
+        <li class="notification">
+            <div class="media">
+              <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+              <div class="media-body">
+                <strong class="notification-title"><a href="#">James Bond</a> resolved <a href="#">B-007 - Desolve Spectre organization</a></strong>
+
+                <div class="notification-meta">
+                  <small class="timestamp">1. 9. 2015, 08:00</small>
+                </div>
+
+              </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown dropdown-notifications sw-open"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">data-count=</span><span class="s">"3"</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-bell notification-icon"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"caret"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-container"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-toolbar"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-toolbar-actions"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-search"</span><span class="nt">&gt;&lt;/i&gt;</span> View All<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"dropdown-toolbar-title"</span><span class="nt">&gt;</span>Recent Notifications  (3)<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /dropdown-toolbar --&gt;</span>
+
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu notifications"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;/ul&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="application-notifications">Application Notifications</h3>
+
+<p>Notifications component can be used for any kind of messages you want to show in your app. Number of unread messages can be indicated by a simple icon with appropriate message count. Its style can be adjusted by a set of variables, thefore it will always fit your design.</p>
+
+<div class="sw-example" style="padding-bottom: 390px">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Tasks</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown dropdown-notifications open">
+        <a href="#notifications-panel" class="nav-link dropdown-toggle" data-toggle="dropdown">
+          <i data-count="2" class="oi oi-bell notification-icon" aria-label="Nofitication centre"></i>
+        </a>
+
+        <div class="dropdown-container">
+         <div class="dropdown-toolbar">
+            <div class="dropdown-toolbar-actions">
+              <a href="#"><i class="glyphicon glyphicon-search"></i> View All</a>
+            </div>
+            <h3 class="dropdown-toolbar-title">Recent (3)</h3>
+          </div><!-- /dropdown-toolbar -->
+
+          <ul class="dropdown-menu notifications">
+            <li class="notification">
+                <div class="media">
+                  <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+                  <div class="media-body">
+                    <strong class="notification-title"><a href="#">Dave Lister</a> commented on <a href="#">DWARF-13 - Maintenance</a></strong>
+                    <p class="notification-desc">I totally don't wanna do it. Rimmer can do it.</p>
+
+                    <div class="notification-meta">
+                      <small class="timestamp">27. 11. 2015, 15:00</small>
+                    </div>
+                  </div>
+                </div>
+            </li>
+
+            <li class="notification">
+                <div class="media">
+                  <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+                  <div class="media-body">
+                    <strong class="notification-title"><a href="#">Nikola Tesla</a> resolved <a href="#">T-14 - Awesome stuff</a></strong>
+
+                    <p class="notification-desc">Resolution: Fixed, Work log: 4h</p>
+
+                    <div class="notification-meta">
+                      <small class="timestamp">27. 10. 2015, 08:00</small>
+                    </div>
+
+                  </div>
+                </div>
+            </li>
+
+            <li class="notification">
+                <div class="media">
+                  <img data-src="holder.js/50x50?bg=cccccc" class="mr-2 img-circle" alt="Name" />
+                  <div class="media-body">
+                    <strong class="notification-title"><a href="#">James Bond</a> resolved <a href="#">B-007 - Desolve Spectre organization</a></strong>
+
+                    <div class="notification-meta">
+                      <small class="timestamp">1. 9. 2015, 08:00</small>
+                    </div>
+
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </li><!-- /dropdown -->
+
+        <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">People</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg navbar-dark bg-dark"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Tasks<span class="nt">&lt;/a&gt;</span>
+
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">data-target=</span><span class="s">"#navbarSupportedContent"</span> <span class="na">aria-controls=</span><span class="s">"navbarSupportedContent"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Toggle navigation"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"navbar-toggler-icon"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"navbarSupportedContent"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"navbar-nav"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item dropdown dropdown-notifications open"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#notifications-panel"</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">data-count=</span><span class="s">"2"</span> <span class="na">class=</span><span class="s">"oi oi-bell notification-icon"</span> <span class="na">aria-label=</span><span class="s">"Nofitication centre"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/a&gt;</span>
+
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-container"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-toolbar"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-toolbar-actions"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-search"</span><span class="nt">&gt;&lt;/i&gt;</span> View All<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"dropdown-toolbar-title"</span><span class="nt">&gt;</span>Recent (3)<span class="nt">&lt;/h3&gt;</span>
+          <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /dropdown-toolbar --&gt;</span>
+
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu notifications"</span><span class="nt">&gt;</span>
+            ...
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/li&gt;</span><span class="c">&lt;!-- /dropdown --&gt;</span>
+
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dashboard<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Projects<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>People<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/nav&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="notifications-overview">Notifications Overview</h2>
+
+<h3 id="module-notifications"><span class="text-muted">Module: </span>Notifications</h3>
+
+<p>This table gives you a quick overview of elements and variables.</p>
+
+<div class="table-responsive sw-table">
+  <table class="table table-bordered">
+    <thead>
+     <tr>
+       <th style="width: 200px">Name</th>
+       <th style="width: 200px">Class</th>
+       <th>Usage</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Wrapper</strong></td>
+        <td><code>.notifications</code></td>
+        <td>Wrapper for <code>.notification</code> elements.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Notification</strong></td>
+        <td><code>.notification</code></td>
+        <td>Notification element, which can consist of title, text, meta data, etc.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Title</strong></td>
+        <td><code>.notification-title</code></td>
+        <td>Title can contain any text, also links. It can be emphasized, if you use <code>&lt;strong&gt;</code> element.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Description</strong></td>
+        <td><code>.notification-desc</code></td>
+        <td>Description is optional, you don't have to use one. It may be comment, change in related record, etc.</td>
+      </tr>
+
+      <tr>
+        <td><strong>Meta (time/date)</strong></td>
+        <td><code>.notification-meta</code></td>
+        <td>Additional meta information, which provides more context for the notification.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 id="module-notification-icon"><span class="text-muted">Module: </span>Notification Icon</h3>
+
+<p>This table gives you a quick overview of elements and variables.</p>
+
+<div class="table-responsive sw-table">
+  <table class="table table-bordered">
+    <thead>
+     <tr>
+       <th style="width: 100px">Name</th>
+       <th style="width: 200px">Class</th>
+       <th>Usage</th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Icon</strong></td>
+        <td><code>.notification-icon</code></td>
+        <td>
+          <p>Indicator of unread notifications / messages, which can be used on icons.</p>
+
+          <strong>Variables:</strong>
+          <ul>
+            <li><code>@notifications-icon-font-size: 0.786 * @font-size-base;</code><br /><span class="text-muted">Number inside the indicator</span></li>
+            <li><code>@notifications-icon-bg: red;</code><br /><span class="text-muted">Color of the background, usually red.</span></li>
+            <li><code>@notifications-icon-color: #fff;</code><br /><span class="text-muted">Text color</span></li>
+            <li><code>@notifications-icon-radius: 10px</code><br /><span class="text-muted"></span></li>
+          </ul>
+        </td>
+      </tr>
+   </tbody>
+  </table>
+</div>
+
+          </div>
+
+          <div class="col-md-3 hidden-sm hidden-xs">
+            <div class="sw-aside">
+  <nav class="sw-nav-tree">
+    <ul class="nav">
+      <li><a href="#notifications-list">Notifications List</a></li>
+      <li><a href="#dropdown-panel">Dropdown Panel</a></li>
+      <li><a href="#application-notifications">Application Notifications</a></li>
+      <li class="nav-divider"></li>
+      <li><a href="#notifications-overview">Notifications Overview</a></li>
+    </ul>
+  </nav>
+</div>
+          </div>
+        </div>
+
+
+        <div class="sw-section sw-footer">
+	<div class="row">
+	  <div class="col-md-6 offset-md-3">
+	    <p class="sw-text">Notifications component is part of Skywalk, set of components and extensions for Bootstrap Framework. Skywalk gives you fine quality components, which will save you a lot of development time.</p>
+
+	    <p class="sw-text">Created with care by Martin Staněk, Twitter: <a href="https://twitter.com/koucik">@koucik</a>, Github: <a href="https://github.com/skywalkapps">@skywalkapps</a> </p>
+	  </div>
+	</div>
+</div><!-- /sw-section -->
+
+      </div>
+    </div>
+
+    <!-- Footer and JS -->
+    <!--
+	Javascripts
+	==================================================
+-->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="javascripts/docs.js"></script>
+
+<script>
+$(function(){
+  $('.sw-aside').affix({
+    offset: {
+      top: $('.sw-header').outerHeight() - 45 // margin
+    }
+  })
+})
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72436545-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+</html>
