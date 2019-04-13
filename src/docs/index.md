@@ -3,6 +3,7 @@ layout: default
 title: Bootstrap Notifications for v4
 name: Notifications
 description: Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.
+
 ---
 
 ### Notifications List

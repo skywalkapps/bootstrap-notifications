@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    {% include head.html %}
-    <!-- Place anything custom after this. -->
-  </head>
+
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  {% include head.html %}
+  <!-- Place anything custom after this. -->
+</head>
 
 
-  <body class="sw-docs" data-spy="scroll" data-target=".sw-aside">
-    <a class="sr-only" href="#content">Skip navigation</a>
+<body class="sw-docs" data-spy="scroll" data-target=".sw-aside">
+  <a class="sr-only" href="#content">Skip navigation</a>
 
-    <!-- Page search and navigation -->
-    <div class="l-sidebar">
-      <div class="l-sidebar-body">
-        {% include nav.html %}
-      </div>
-    </div><!-- /l-sidebar -->
+  <!-- Page search and navigation -->
+  <div class="l-header">
+    {% include nav.html %}
+  </div><!-- /l-sidebar -->
 
-    <!-- Page content -->
-    <div id="content" class="l-body" role="main">
+  <!-- Page content -->
+  <div id="content" class="l-body" role="main">
 
-      <div class="sw-header" id="introduction">
-        <div class="container">
+    <div class="sw-header sw-header--with-tabs" id="introduction">
+      <div class="container">
 
-          <div class="row">
-            <div class="col-md-8">
-              <h1 class="page-header">{{ page.title }}</h1>
-              <p class="sw-text lead">{{ page.description }}</p>
-            </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="page-header">{{ page.title }}</h1>
+            <p class="sw-text lead">{{ page.description }}</p>
 
-            <!-- <div class="col-md-4">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="github-button" href="{{ site.repo }}" data-icon="octicon-star" data-show-count="true"
+                  aria-label="Star skywalkapps/bootstrap-notifications on GitHub">Star</a>
+              </li>
+              <li class="list-inline-item">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/skywalkapps" data-show-count="true"
+                  aria-label="Follow @skywalkapps on GitHub">Follow @skywalkapps</a>
+              </li>
+            </ul>
+
+            {% include tabs.html %}
+          </div>
+
+          <!-- <div class="col-md-4">
               <a href="/bootstrap-activity-feed" class="advertisement">
                 <h3>NEW! Bootstrap Activity Feed</h3>
                 <p>Activity Feed displays user posts in Facebook / Twitter-like style. Create the best feed out there! <em>Learn more &rarr;</em></p>
               </a>
             </div> -->
-          </div>
-
-        </div><!-- /container -->
-
-      </div><!-- /sw-header -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9 content">
-            {{ content }}
-          </div>
-
-          <div class="col-md-3 hidden-sm hidden-xs">
-            {% include nav-aside.html %}
-          </div>
         </div>
 
+      </div><!-- /container -->
 
-        {% include footer.html %}
+    </div><!-- /sw-header -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 content">
+          {{ content }}
+        </div>
+
+        <div class="col-md-3 hidden-sm hidden-xs">
+          {% include nav-aside.html %}
+        </div>
       </div>
+
+
+      {% include footer.html %}
     </div>
+  </div>
 
-    <!-- Footer and JS -->
-    {% include footer-meta.html %}
+  <!-- Footer and JS -->
+  {% include footer-meta.html %}
 
-  </body>
+</body>
+
 </html>

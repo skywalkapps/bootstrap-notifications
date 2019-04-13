@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    
+
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
   <!-- Basic Page Needs
   ================================================== -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="HTML, CSS, bootstrap, front-end, frontend, plugin, module">
-  <meta name="description" content="Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.">
-  <meta name="author" content="Martin Staněk">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="HTML, CSS, bootstrap, front-end, frontend, plugin, module">
+<meta name="description" content="Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.">
+<meta name="author" content="Martin Staněk">
 
-  <title>Bootstrap Notifications for v4 - by @skywalkapps</title>
+<title>Bootstrap Notifications for v4 - by @skywalkapps</title>
 
 
-  <!-- Common stylesheet for all devices -->
-  <!-- <link rel="stylesheet" href="stylesheets/skywalk-docs.min.css"> -->
-  <link rel="stylesheet" href="stylesheets/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/docs.css">
-  <link rel="stylesheet" href="stylesheets/bootstrap-dropmenu.css">
-  <link rel="stylesheet" href="stylesheets/bootstrap-notifications.css">
+<!-- Common stylesheet for all devices -->
+<!-- <link rel="stylesheet" href="stylesheets/skywalk-docs.min.css"> -->
+<link rel="stylesheet" href="stylesheets/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="libs/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="stylesheets/bootstrap-dropmenu.css">
+<link rel="stylesheet" href="stylesheets/bootstrap-notifications.css">
+<!-- Place anything custom after this. -->
+
+<!-- Favicons -->
+<meta name="apple-mobile-web-app-title" content="Skywalk">
+<link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+
   <!-- Place anything custom after this. -->
-
-  <!-- Favicons -->
-  <meta name="apple-mobile-web-app-title" content="Skywalk">
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-
-    <!-- Place anything custom after this. -->
-  </head>
+</head>
 
 
-  <body class="sw-docs" data-spy="scroll" data-target=".sw-aside">
-    <a class="sr-only" href="#content">Skip navigation</a>
+<body class="sw-docs" data-spy="scroll" data-target=".sw-aside">
+  <a class="sr-only" href="#content">Skip navigation</a>
 
-    <!-- Page search and navigation -->
-    <div class="l-sidebar">
-      <div class="l-sidebar-body">
-        <header class="sw-navbar navbar navbar-expand-lg navbar-dark">
+  <!-- Page search and navigation -->
+  <div class="l-header">
+    <nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a href="http://skywalkapps.github.io" class="sw-brand navbar-brand logo" aria-label="Skywalk"><span>Skywalk</span> <small>Notifications</small></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a href="http://skywalkapps.github.io" class="sw-brand navbar-brand logo" aria-label="Skywalk"><span>Skywalk</span>
+      <small>Notifications</small></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="https://github.com/skywalkapps/bootstrap-notifications">Github</a></li>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <a class="nav-link" href="http://skywalkapps.github.io">All Components</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/skywalkapps/bootstrap-notifications">Github</a></li>
+        <li class="nav-item ml-3">
           <div class="btn-group">
             <a href="https://github.com/skywalkapps/bootstrap-notifications/archive/bootstrap-v4.zip" class="btn btn-primary sw-btn-primary" role="button">
               Download Notifications v2.0.0
@@ -70,39 +74,62 @@
       </ul>
     </div>
   </div>
-</header>
+</nav>
 
-      </div>
-    </div><!-- /l-sidebar -->
+  </div><!-- /l-sidebar -->
 
-    <!-- Page content -->
-    <div id="content" class="l-body" role="main">
+  <!-- Page content -->
+  <div id="content" class="l-body" role="main">
 
-      <div class="sw-header" id="introduction">
-        <div class="container">
+    <div class="sw-header sw-header--with-tabs" id="introduction">
+      <div class="container">
 
-          <div class="row">
-            <div class="col-md-8">
-              <h1 class="page-header">Bootstrap Notifications for v4</h1>
-              <p class="sw-text lead">Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.</p>
-            </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="page-header">Bootstrap Notifications for v4</h1>
+            <p class="sw-text lead">Notifications are part of any serious web application. This component comes very handy when you want to quickly implement UI for notifications in your app.</p>
 
-            <!-- <div class="col-md-4">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a class="github-button" href="https://github.com/skywalkapps/bootstrap-notifications" data-icon="octicon-star" data-show-count="true"
+                  aria-label="Star skywalkapps/bootstrap-notifications on GitHub">Star</a>
+              </li>
+              <li class="list-inline-item">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/skywalkapps" data-show-count="true"
+                  aria-label="Follow @skywalkapps on GitHub">Follow @skywalkapps</a>
+              </li>
+            </ul>
+
+            <nav class="sw-tabs">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Bootstrap v4</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/bootstrap-3">Boostrap v3</a>
+    </li>
+  </ul>
+</nav>
+
+          </div>
+
+          <!-- <div class="col-md-4">
               <a href="/bootstrap-activity-feed" class="advertisement">
                 <h3>NEW! Bootstrap Activity Feed</h3>
                 <p>Activity Feed displays user posts in Facebook / Twitter-like style. Create the best feed out there! <em>Learn more &rarr;</em></p>
               </a>
             </div> -->
-          </div>
+        </div>
 
-        </div><!-- /container -->
+      </div><!-- /container -->
 
-      </div><!-- /sw-header -->
+    </div><!-- /sw-header -->
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9 content">
-            <h3 id="notifications-list">Notifications List</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 content">
+          <h3 id="notifications-list">Notifications List</h3>
 
 <p>Notifications are a flexible and powerful component for displaying application messages. You have multiple options of presentation, can use either <code class="highlighter-rouge">&lt;ul&gt;</code> or <code class="highlighter-rouge">&lt;div&gt;</code> for parent element. Notification component can be used together with media object, however, it is not mandatory.</p>
 
@@ -495,25 +522,32 @@
   </table>
 </div>
 
-          </div>
-
-          <div class="col-md-3 hidden-sm hidden-xs">
-            <div class="sw-aside">
-  <nav class="sw-nav-tree">
-    <ul class="nav">
-      <li><a href="#notifications-list">Notifications List</a></li>
-      <li><a href="#dropdown-panel">Dropdown Panel</a></li>
-      <li><a href="#application-notifications">Application Notifications</a></li>
-      <li class="nav-divider"></li>
-      <li><a href="#notifications-overview">Notifications Overview</a></li>
-    </ul>
-  </nav>
-</div>
-          </div>
         </div>
 
+        <div class="col-md-3 hidden-sm hidden-xs">
+          <div class="sw-aside">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link" href="#notifications-list">Notifications List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#dropdown-panel">Dropdown Panel</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#application-notifications">Application Notifications</a>
+    </li>
+    <li class="nav-divider"></li>
+    <li class="nav-item">
+      <a class="nav-link" href="#notifications-overview">Notifications Overview</a>
+    </li>
+  </ul>
+</div>
 
-        <div class="sw-section sw-footer">
+        </div>
+      </div>
+
+
+      <div class="sw-section sw-footer">
 	<div class="row">
 	  <div class="col-md-6 offset-md-3">
 	    <p class="sw-text">Notifications component is part of Skywalk, set of components and extensions for Bootstrap Framework. Skywalk gives you fine quality components, which will save you a lot of development time.</p>
@@ -523,33 +557,69 @@
 	</div>
 </div><!-- /sw-section -->
 
-      </div>
     </div>
+  </div>
 
-    <!-- Footer and JS -->
-    <!--
+  <!-- Footer and JS -->
+  <!--
 	Javascripts
 	==================================================
 -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="libs/bootstrap/bootstrap.min.js"></script>
-<script src="javascripts/docs.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script async src="https://buttons.github.io/buttons.js"></script>
 
 <script>
-$(function(){
-  $('.sw-aside').affix({
-    offset: {
-      top: $('.sw-header').outerHeight() - 45 // margin
-    }
+  $(function () {
+    var examples = $('.sw-example');
+    var newIframe;
+
+    var handleIframeLoad = function () {
+      $(this).height($(this).contents().find('body').outerHeight());
+      $(this).width($(this).contents().find('body').width());
+    };
+
+    examples.each(function (i, example) {
+      var element = $(example);
+      var html = element.html();
+      var css = '<link rel="stylesheet" href="stylesheets/bootstrap-dropmenu.css"><link rel="stylesheet" href="stylesheets/bootstrap-notifications.css"><link rel="stylesheet" href="libs/bootstrap.min.css">';
+      var js = '<script src="libs/holder.js"><' + '/script><script src="https://code.jquery.com/jquery-2.1.4.min.js"><' + '/script><script src="libs/bootstrap.min.js"><' + '/script>';
+
+      var iframeContent = '<!DOCTYPE html><html><head><title>Rendered HTML from Pattern</title>' + css + '</head><body>' + html + js + '</body></html>';
+
+      newIframe = document.createElement('iframe');
+      newIframe.id = 'test' + i;
+      newIframe.className = 'sw-example';
+      newIframe.width = '100%';
+      newIframe.height = '100%';
+      newIframe.src = 'about:blank';
+
+      // Use whatever method is needed to insert the iframe where you want it
+      example.parentNode.insertBefore(newIframe, example);
+
+      newIframe.addEventListener('load', handleIframeLoad);
+      newIframe.contentWindow.document.open('text/html', 'replace');
+      newIframe.contentWindow.document.write(iframeContent);
+      newIframe.contentWindow.document.close();
+
+      $(example).hide();
+    });
+
+    // $('.sw-aside').affix({
+    //   offset: {
+    //     top: $('.sw-header').outerHeight() - 45 // margin
+    //   }
+    // })
   })
-})
 </script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-72436545-1', 'auto');
   ga('send', 'pageview');
@@ -557,5 +627,6 @@ $(function(){
 </script>
 
 
-  </body>
+</body>
+
 </html>

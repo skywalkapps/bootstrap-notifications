@@ -1,14 +1,19 @@
-<header class="sw-navbar navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg">
   <div class="container">
-    <a href="{{ site.home }}" class="sw-brand navbar-brand logo" aria-label="Skywalk"><span>Skywalk</span> <small>{{ site.name }}</small></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a href="{{ site.home }}" class="sw-brand navbar-brand logo" aria-label="Skywalk"><span>Skywalk</span>
+      <small>{{ site.name }}</small></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="{{ site.repo }}">Github</a></li>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <a class="nav-link" href="{{ site.home }}">All Components</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.repo }}">Github</a></li>
+        <li class="nav-item ml-3">
           <div class="btn-group">
             <a href="{{ site.download.source }}" class="btn btn-primary sw-btn-primary" role="button">
               Download Notifications v{{ site.current_version }}
@@ -18,4 +23,4 @@
       </ul>
     </div>
   </div>
-</header>
+</nav>
