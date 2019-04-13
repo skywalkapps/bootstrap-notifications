@@ -1,0 +1,60 @@
+//
+// MODULE: Notifications
+// List of notification messages, basic structure
+//
+// @author: Martin Staněk (https://github.com/skywalkapps)
+// -----------------------------
+
+// List of notifications
+.notifications {
+  // for <ul>
+  list-style: none;
+  padding: 0;
+}
+
+.notification {
+  display: block;
+  padding: $notifications-padding;
+  border-width: $notifications-border-width;
+  border-style: solid;
+  border-color: $notifications-border-color;
+  background-color: $notifications-bg;
+  color: $notifiactions-text-color;
+  text-decoration: none;
+
+  &:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 $notifications-dropdown-border-radius $notifications-dropdown-border-radius;
+  }
+
+  // State: Hover
+  &:hover,
+  &.active:hover {
+    background-color: $notifications-hover-bg;
+    border-color: $notifications-hover-border-color;
+    text-decoration: none;
+  }
+
+  // State: Active as in "Unread"
+  &.active {
+    background-color: $notifications-hover-active;
+  }
+}
+
+// Notification Title
+// You can use simple <p> or more emphasized <strong>
+.notification-title {
+  font-size: $notifications-title-font-size;
+  margin-bottom: 0;
+}
+
+// Notifications content / description
+.notification-desc {
+  margin-bottom: 0;
+  font-size: $notifications-text-font-size;
+}
+
+// Notifications meta (Time / Date)
+.notification-meta {
+  color: $notifications-meta-color;
+}

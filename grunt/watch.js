@@ -8,8 +8,8 @@ module.exports = {
     livereload: true
   },
   styles: {
-    files: ['src/stylesheets/**/*.less'],
-    tasks: ['less', 'copy:css']
+    files: ['src/stylesheets/**/*.scss'],
+    tasks: ['sass', 'copy:css']
   },
   js: {
     files: 'src/javascripts/**/*.js',
