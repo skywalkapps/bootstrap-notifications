@@ -1,9 +1,0 @@
-tabs:
-    tab1:
-        name: Bootstrap 4
-        title: Bootstrap 4 Notifications
-        content_id: tab-bootstrap-4
-    tab2:
-        name: Bootstrap 3
-        title: Bootstrap 3 Notifications
-        content_id: tab-bootstrap-3

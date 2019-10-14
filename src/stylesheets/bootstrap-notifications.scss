@@ -1,23 +1,16 @@
 //
-// BOOTSTRAP EXTENSION: Dropmenu
-// This module extends dropdown module with rich structure, menu positioning and more
-
+// BOOTSTRAP EXTENSION: Notifications
+//
+//
 // @author: Martin Staněk (https://github.com/icoach)
 // @require: dropdown
 // @bootstrap: 4.0
 // -------------------------------
 
-$libPath: '../../vendor';
-
 // Core variables and mixins
 @import "../../vendor/bootstrap-v4/scss/functions";
 @import "../../vendor/bootstrap-v4/scss/variables";
 @import "../../vendor/bootstrap-v4/scss/mixins";
-
-// LIBRARIES
-// -------------------
-// TODO: rewrite dropmenu to SCSS
-// @import '../../vendor/bootstrap-dropmenu/src/stylesheets/index';
 
 // MODULE UTILS
 // -------------------

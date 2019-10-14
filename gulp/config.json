@@ -1,0 +1,19 @@
+{
+  "stylesheets": {
+    "sourceFolder": "./src/stylesheets",
+    "distFolder": "./dist/stylesheets",
+    "filename": "bootstrap-notifications.css",
+    "enableSourcemaps": true
+  },
+  "javascripts": {
+    "sourceFolder": "./src/javascripts",
+    "distFolder": "./dist/javascripts"
+  },
+  "browsersync": {
+    "watch": [
+      "*.html",
+      "*.htm",
+      "*.php"
+    ]
+  }
+}
