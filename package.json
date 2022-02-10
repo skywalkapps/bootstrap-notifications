@@ -34,7 +34,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.14",
     "pump": "^3.0.0"
   },
